@@ -8,12 +8,13 @@ date_input,time_input=data.json()['list'][0]['dt_txt'].split(' ')
 
 def temp():
 	temps=data.json()['list'][0]['main']['temp']
-	print(temps)
+	print("Temparature:",temps)
 def wind():
 	winds=data.json()['list'][0]['wind']['speed']
-	print(winds)
+	print("wind speed: ",winds)
 def pressure():
 	pressures=data.json()['list'][0]['main']['pressure']
+	print("Pressure: ",pressures)
 
 while True:
 	print("Press 1 , Get Temparature")
